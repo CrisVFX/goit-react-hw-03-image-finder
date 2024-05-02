@@ -1,19 +1,16 @@
-import { RotatingLines } from 'react-loader-spinner';
+import { FidgetSpinners } from 'react-loader-spinner';
 import css from './Loader.module.css';
 
 export const Loader = () => {
   return (
     <div className={css.loaderWrap}>
-      <RotatingLines
+      <FidgetSpinner
         visible={true}
-        height="96"
-        width="96"
-        color="grey"
-        strokeWidth="5"
-        animationDuration="0.75"
-        ariaLabel="rotating-lines-loading"
+        height="80"
+        width="80"
+        ariaLabel="fidget-spinner-loading"
         wrapperStyle={{}}
-        wrapperClass=""
+        wrapperClass="fidget-spinner-wrapper"
       />
     </div>
   );
